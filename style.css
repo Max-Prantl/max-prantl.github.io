@@ -1,0 +1,166 @@
+@media screen, print, (orientation: landscape) {
+    body {
+        background-image: url(images/backgrounds/rocky_beach.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-color: #fffff0;
+        font-family: "Lora", serif;
+        font-size: 21px;
+        color: #111111;
+        display: flex;
+        justify-content: center;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    h1, h2, h3 {
+        font-family: "Dekko";
+    }
+
+    .main {
+        background-color: #fffff0;
+        padding-left: 1.25em;
+        padding-right: 1.25em;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        text-align: justify;
+    }
+
+    .main h1 {
+        text-align: left;
+        font-size: 50px;
+    }
+
+    .main hr {
+        max-width: 50%;
+    }
+    
+    a {
+        text-decoration: none;
+        color: rgb(0, 0, 75);
+    }
+
+    .prefacenote {
+        font-style: italic;
+        text-align: right;
+    }
+    
+    .quotegrid12 {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: auto 2fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+
+    .quoteimg {
+        border-radius: 5px;
+        max-width: 300px;
+        padding-right: 0.5em;
+    }
+
+    .quotetxt {
+        font-style: italic;
+        font-family: "EB Garamond", serif;
+        text-align: left;
+        white-space: pre-line;
+    }
+
+    .contents li {
+        padding: 0.1em;
+    }
+
+    .toplink {
+        font-weight: bold;
+        text-decoration: none;
+        color: #111111;
+    }
+
+    .sublink {
+        font-weight: normal;
+        text-decoration: none;
+        color: #111111;
+        font-size: 90%;
+    }
+
+    .langholder {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr 3fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        padding-bottom: 1em;
+        padding-top: 1em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        text-align: center;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        border-radius: 2px;
+        border-color: rgb(59, 59, 59);
+    }
+
+    .langholder img {
+        height: 30px;
+    }
+
+    .article-img {
+        float: left;
+        padding-right: 1em;
+        padding-bottom: 0.1em;
+        max-width: 200px;
+    }
+
+    .poem {
+        text-align: center;
+        white-space: pre-line;
+        font-style: italic;
+    }
+
+    .author-img {
+        float: left;
+        max-width: 300px;
+    }
+
+    .bookcover img {
+        max-width: 200px;
+    }
+
+    table, td {
+        border: 1px solid;
+        border-collapse: collapse;
+        padding: 1em;
+    }
+
+    .epublink {color: darkgreen;}
+    .wordlink {color: darkblue;}
+    .pdflink {color: darkred;}
+    .in-german {font-style: italic;}
+
+    .citedtext {
+        font-size: 90%;
+        margin-left: 1em;
+        margin-right: 1em;
+        padding-bottom: 1em;
+        border-bottom: 2px dotted black;
+        border-color: rgb(59, 59, 59);
+        border-collapse: collapse;
+    }
+
+}
+
+
+@media (orientation: portrait) {
+    body {
+        background-image: url(images/backgrounds/small/rocky_beach.webp);
+    }
+    .quotegrid12 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+}

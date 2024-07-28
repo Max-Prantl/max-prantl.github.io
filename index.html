@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Prantl - Language Redirect</title>
+    <script>
+        var lang = navigator.language;
+        switch(lang) {
+            case "en-GB":
+            case "en-US":
+                window.location.replace("en/index.html");
+                break;
+            case "nl-NL":
+                window.location.replace("nl/index.html");
+                break;
+            case "de-DE":
+                window.location.replace("de/index.html");
+                break;
+            default:
+                window.location.replace("nl/index.html");
+        }
+    </script>
+</head>
+<body>
+    <p>
+        This page should not be visible. It is trying to redirect you to the local version of this website based on your system's region and language settings. If that does not work, please use the following links:
+    </p>
+    <p>
+        <ul>
+            <li>De Nederlandse webpagina: <a href="nl/index.html">Klik!</a></li>
+            <li>Die Deutsche webseite: <a href="de/index.html">Klicken!</a></li>
+            <li>The English website: <a href="en/index.html">Click!</a></li>
+        </ul>
+    </p>
+</body>
+</html>
